@@ -1,21 +1,5 @@
 // Add your API endpoint here
-require('dotenv').config();
-
-app.get('/', (req, res) => {
-    const apiEndpoint = process.env.APIendpoint;
-    res.send(`
-    <html>
-    <head><title>My App</title></head>
-    <body>
-      <script>
-        var API_ENDPOINT = "${apiEndpoint}";
-      </script>
-      <script src="app.js"></script>
-    </body>
-    </html>
-    `);
-  });
-  
+API_ENDPOINT = "APIendpoint=https://vo7mlf3cw9.execute-api.us-west-2.amazonaws.com/dev"
 
 
 // AJAX POST request to save employee data
