@@ -25,7 +25,7 @@ document.getElementById("saveEmployee").onclick = function(){
 }
 
 // AJAX GET request to retrieve all employees
-document.getElementById("getemployees").onclick = function(){  
+document.getElementById("getEmployees").onclick = function(){  
     $.ajax({
         url: API_ENDPOINT,
         type: 'GET',
