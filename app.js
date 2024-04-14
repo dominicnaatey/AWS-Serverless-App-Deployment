@@ -1,9 +1,9 @@
 // Add your API endpoint here
-API_ENDPOINT = "APIendpoint=https://vo7mlf3cw9.execute-api.us-west-2.amazonaws.com/dev"
+var API_ENDPOINT = "APIendpoint=https://vo7mlf3cw9.execute-api.us-west-2.amazonaws.com/dev"
 
 
 // AJAX POST request to save employee data
-document.getElementById("savesemployee").onclick = function(){
+document.getElementById("saveEmployee").onclick = function(){
     var inputData = {
         "employeeid": $('#employeeid').val(),
         "name": $('#name').val(),
