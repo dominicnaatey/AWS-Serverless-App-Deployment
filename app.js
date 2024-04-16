@@ -1,5 +1,5 @@
 // Add your API endpoint here
-var API_ENDPOINT = "https://86cd8pdxai.execute-api.us-west-2.amazonaws.com/dev"
+var API_ENDPOINT = "https://9qsm0u8nmb.execute-api.us-west-2.amazonaws.com/dep";
 
 
 // AJAX POST request to save employee data
