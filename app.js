@@ -45,4 +45,54 @@ $(document).ready(function(){
             }
         });
     });
+
+    // Function to convert JSON to CSV
+    function convertToCSV(objArray) {
+        var array = typeof objArray != 'object' ? JSON.parse(objArray) : objArray;
+        var str = '';
+
+        // Add header line
+        var headers = ['Employee ID', 'Name', 'Role', 'Age'];
+        str += headers.join(',') + '\r\n';
+        
+        for (var i = 0; i < array.length; i++) {
+            var line = '';
+            line += array[i]['employeeid'] + ',';
+            line += '"' + array[i]['name'] + '",';
+            line += '"' + array[i]['role'] + '",';
+            line += array[i]['age'];
+            str += line + '\r\n';
+        }
+        return str;
+    }
+
+    // Function to download CSV
+    function downloadCSV(csv, filename) {
+        var csvFile;
+        var downloadLink;
+
+        csvFile = new Blob([csv], {type: 'text/csv'});
+        downloadLink = document.createElement('a');
+        downloadLink.download = filename;
+        downloadLink.href = window.URL.createObjectURL(csvFile);
+        downloadLink.style.display = 'none';
+        document.body.appendChild(downloadLink);
+        downloadLink.click();
+    }
+
+    // Click event handler for download CSV button
+    $("#downloadCSV").click(function(){
+        $.ajax({
+            url: API_ENDPOINT,
+            type: 'GET',
+            contentType: 'application/json; charset=utf-8',
+            success: function (response) {
+                var csv = convertToCSV(response);
+                downloadCSV(csv, 'employee_data.csv');
+            },
+            error: function () {
+                alert("Error downloading employee data as CSV.");
+            }
+        });
+    });
 });
