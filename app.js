@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var API_ENDPOINT = "https://bf7h44b347.execute-api.us-west-2.amazonaws.com/Test";
+    var API_ENDPOINT = "https://9nymjuda1j.execute-api.us-west-2.amazonaws.com/test";
 
     // AJAX POST request to save employee data
     $("#saveemployee").click(function(){
