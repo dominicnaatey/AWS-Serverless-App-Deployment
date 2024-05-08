@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emlpoyee Data</title>
+    <title>Employee Data</title>
     <style>
         body {
             background-color: #f0f0f0; /* Light gray background */
             color: #333; /* Dark gray text */
             font-family: Arial, sans-serif; /* Use Arial font */
         }
-
+    
         h1 {
             color: #007bff; /* Blue heading text */
         }
-
+    
         .container {
             max-width: 600px; /* Limit width to 600px */
             margin: 30px auto; /* Center the container */
@@ -23,7 +23,7 @@
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add shadow */
         }
-
+    
         input[type="text"], input[type="submit"] {
             width: 100%;
             font-size: 15px;
@@ -33,7 +33,7 @@
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-
+    
         input[type="submit"] {
             background-color: #007bff; /* Blue submit button */
             color: #fff; /* White text */
@@ -43,22 +43,22 @@
             cursor: pointer; /* Add pointer cursor */
             
         }
-
+    
         input[type="submit"]:hover {
             background-color: #0056b3; /* Darker blue on hover */
         }
-
+    
         table {
             width: 100%;
             border-collapse: collapse;
         }
-
+    
         th, td {
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ddd;
         }
-
+    
         th {
             background-color: #f2f2f2; /* Light gray header background */
         }
@@ -80,20 +80,15 @@
         <input type="text" name="age" id="age"><br>
         
         <br>
-        <input type="submit" id="saveEmployee" value="Save Employee Data">
+        <input type="submit" id="saveemployee" value="Save Employee Data">
         <p id="employeeSaved"></p>
         
         <br>
-        <input type="submit" id="getEmployees" value="View all Employees">
+        <input type="submit" id="getemployees" value="View all Employees">
         <br><br>
         <div id="showEmployees">
             <table id="employeeTable">
-                <colgroup>
-                    <col style="width:20%">
-                    <col style="width:20%">
-                    <col style="width:20%">
-                    <col style="width:20%">
-                </colgroup>
+                <!-- Table headers remain unchanged -->
                 <thead>
                     <tr>
                         <th>Employee ID</th>
@@ -109,7 +104,7 @@
         </div>
     </div>
 
-    <script src="./app.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
