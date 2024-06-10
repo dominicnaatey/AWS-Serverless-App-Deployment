@@ -47,7 +47,7 @@ The architecture consists of the following components:
    - Utilized AWS CodePipeline to automate the continuous integration and deployment of the frontend application code from GitHub to an S3 bucket.
 6. **CloudFront:** Used CloudFront DNS to secure and distribute the web application efficiently.
 
-## CodePipeline
+## Deployment Pipeline
 ![Deployment Pipeline](https://github.com/Dom7k/Employee-AWS-Serverless-App/blob/main/Images/deployment%20pipeline.png)
 
 ## Setup and Installation
