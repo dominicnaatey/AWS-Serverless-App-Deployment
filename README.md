@@ -25,7 +25,7 @@ This project is a serverless web application designed to manage employee data us
 
 ## Architecture
 
-![Architecture Diagram](https://github.com/Dom7k/Employee-AWS-Serverless-App/blob/main/Images/architecture%20diagram.jpg)
+![Architecture Diagram](https://github.com/Dom7k/Employee-AWS-Serverless-App/blob/main/Images/architecture%20diagram.gif)
 
 The architecture consists of the following components:
 1. DynamoDB for data storage.
