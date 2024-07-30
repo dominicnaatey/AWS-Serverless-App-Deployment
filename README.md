@@ -58,8 +58,8 @@ The architecture consists of the following components:
 ### Steps
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/Dom7k/Employee-AWS-Serverless-App.git
-    cd Employee-AWS-Serverless-App
+    git https://github.com/dominicnaatey/AWS-Serverless-App-Deployment.git
+    cd AWS-Serverless-App-Deployment
     ```
 
 2. **Set up AWS resources:**
@@ -88,7 +88,7 @@ The architecture consists of the following components:
     - View stored employee data through the interface.
 
 ## Web App
-![Web App](https://github.com/Dom7k/Employee-AWS-Serverless-App/blob/main/Images/web%20app.png)
+![Web App](https://github.com/dominicnaatey/AWS-Serverless-App-Deployment/blob/main/Images/web%20app.png)
 
 ### API Endpoints
 - **POST /employees:** Add new employee data.
